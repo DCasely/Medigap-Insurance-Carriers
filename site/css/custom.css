@@ -6,3 +6,21 @@
   max-width: 270px;
   max-height: 58px;
 }
+
+/* ============================ */
+/* INTRO */
+/* ============================ */
+
+.section-intro .company-logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.intro-box .subtitle {
+  font-weight: 600;
+}
+
+.section-intro .company-logos img {
+  height: 25px;
+}
