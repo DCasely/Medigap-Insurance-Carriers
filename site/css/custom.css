@@ -1,0 +1,8 @@
+/* ============================ */
+/* HEADER */
+/* ============================ */
+
+.rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
+  max-width: 270px;
+  max-height: 58px;
+}
