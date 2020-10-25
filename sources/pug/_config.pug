@@ -1,0 +1,88 @@
+-
+	var
+		htmlClass = "wide wow-animation",
+		fonts = "//fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600i,700,700i%7CNunito:300,500,900",
+		logo = {
+			default: 'logo-default-294x44.png',
+			inverse: 'logo-inverse-294x44.png',
+			name: 'Medcare'
+		},
+		links = {
+			post: 'blog-post.html',
+			getTemplate:'#get-template'
+		},
+		colors = {
+			primary: '#00bcd1'
+		},
+		menu = [
+			{
+				title: 'Home',
+				link: 'index.html'
+			},
+			{
+				title: 'About us', link: 'about-us.html',
+				dropdown:[
+					{ title: 'Doctors', link:'doctors.html' },
+					{ title: 'Single Doctor', link:'single-doctor.html' }
+				]
+			},
+			{
+				title: 'Departments', link: 'departments.html',
+				dropdown:[
+					{ title: 'Single Department', link:'single-department.html'}
+				]
+			},
+			{
+			title: 'Blog',
+				dropdown: [
+					{
+						title: 'Single Blog post'
+					}
+				] 
+			},
+			{
+				title: 'Pages',
+				link: "#",
+				megamenu: [
+					{
+						title: 'Pages 1',
+						link: null,
+						list: [
+							{ title: 'Typography' },
+							{ title: 'Buttons' },
+							{ title: 'Forms' },
+							{ title: 'Tabs and accordions' },
+							{ title: 'Progress bars' },
+							{ title: 'Tables' }
+						]
+					},
+					{
+						title: 'Pages 2',
+						link: null,
+						list: [
+							{ title: 'Grid system' },
+							{ title: 'Privacy policy' },
+							{ title: 'Doctors', link:'doctors.html' },
+							{ title: 'Single Doctor', link:'single-doctor.html' }
+						]
+					},
+					{
+						title: 'Pages 3',
+						link: null,
+						list: [
+							{ title: 'Under Construction' },
+							{ title: 'Search results' },
+							{ title: 'Blog' },
+							{ title: 'Single Blog Post' }
+						]
+					}
+				]
+			},
+			{
+				title: 'Contacts'
+			}
+		],
+
+		// Predefined variables
+		breadcrumbs = [],
+		pageName = 'Home'

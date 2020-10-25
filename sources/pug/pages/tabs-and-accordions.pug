@@ -1,0 +1,120 @@
+extends ../_skeleton
+include ../components/card
+
+block variables
+	- pageName = 'Tabs and Accordions'
+
+block page 
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-1.png',
+	}).custom-mode-1
+
+	//Tabs
+	section.section.section-md.bg-default.text-center
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h4 Horizontal Tabs
+					//Bootstrap tabs
+					#tabs-1.tabs-custom.tabs-horizontal.tabs-corporate
+						//Nav tabs
+						ul.nav.nav-tabs
+							li.nav-item(role='presentation'): a.nav-link.active(href='#tabs-1-1' data-toggle='tab') Tab 1
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-2' data-toggle='tab') Tab 2
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-3' data-toggle='tab') Tab 3
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-4' data-toggle='tab') Tab 4
+
+						//Tab panes
+						.tab-content
+							div#tabs-1-1.tab-pane.fade.active.show
+								p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly.  
+								p Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+							div#tabs-1-2.tab-pane.fade
+								p The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click.  
+								p We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.  With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. 
+
+							div#tabs-1-3.tab-pane.fade
+								p We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.  
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us.
+
+							div#tabs-1-4.tab-pane.fade
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly.  
+								p You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+	hr
+
+	//Vertical Tabs
+	section.section.section-lg.bg-default.text-center
+		.container
+			h3 Vertical Tabs
+			.row
+				.col-xl-11
+					//Bootstrap tabs
+					#tabs-2.tabs-custom.tabs-vertical.tabs-corporate
+						//Nav tabs
+						ul.nav.nav-tabs
+							li.nav-item(role='presentation'): a.nav-link.active(href='#tabs-2-1' data-toggle='tab') Tab 1
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-2' data-toggle='tab') Tab 2
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-3' data-toggle='tab') Tab 3
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-4' data-toggle='tab') Tab 4
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-5' data-toggle='tab') Tab 5
+
+						//Tab panes
+						.tab-content
+							div#tabs-2-1.tab-pane.fade.show.active
+								p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly.  
+								p Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+							div#tabs-2-2.tab-pane.fade
+								p The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click.  
+								p We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.  With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. 
+
+							div#tabs-2-3.tab-pane.fade
+								p We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.  
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us.
+
+							div#tabs-2-4.tab-pane.fade
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly.  
+								p You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+							div#tabs-2-5.tab-pane.fade
+								p The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click.  
+								p We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.  With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.
+
+	//Accordion
+	section.section.section-md.bg-gray-100.text-center
+		.container
+			.row.justify-content-center
+				.col-lg-9.col-xl-7
+					h4 Accordion
+					//Bootstrap collapse
+					#accordion4.card-group-custom.card-group-classic.wow.fadeInRight( data-wow-dalay=".2s" role='tablist' aria-multiselectable='false' )
+						+card({
+							parentId: 'accordion4',
+							title: 'Oncological diseases',
+							show: true
+						}).card-corporate
+							p We are on the leading edge of cancer care, providing the full continuum of cancer treatments and supportive care services in a single convenient location. Our cancer specialists are experts at diagnosing and treating cancer tumors.
+
+						+card({
+							parentId: 'accordion4',
+							title: 'Viral infections'
+						}).card-corporate
+							p Viral infections generally must run their course, with treatment aimed at easing symptoms and providing some relief while you’re sick. Sometimes, antiviral medications are prescribed for specific infections.
+
+						+card({
+							parentId: 'accordion4',
+							title: 'Nature and technology'
+						}).card-corporate
+							p Nowadays people should balance their life between technological progress and natural life. Technogenic influence may cause different diseases, including cancer. It’s crucial to defend yourself from such affection.
+
+						+card({
+							parentId: 'accordion4',
+							title: 'Physical Rehabilitation'
+						}).card-corporate
+							p A specialized rehabilitation team helps patients achieve the highest quality of life by preventing disability and improving independence through a multi-disciplinary approach which includes a lot of types of therapy.
+
+	include ../sections/_footer-classic

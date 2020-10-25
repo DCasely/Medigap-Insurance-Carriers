@@ -1,0 +1,63 @@
+footer.section.footer-classic.context-dark
+	.footer-classic__head
+		.container
+			.row.row-30.align-items-end.justify-content-center
+				.col-md-8.wow.fadeInUp
+					form.rd-form.rd-mailform.rd-form-inline.footer-subscribe-form(data-form-output="form-output-global", data-form-type='subscribe', method='post', action='bat/rd-mailform.php')
+						.form-wrap
+							input.form-input(id="subscribe-form-email-main" type="email" name="email" data-constraints="@Email @Required")
+							label.form-label(for="subscribe-form-email-main") Your E-mail
+						.form-button.wow.fadeInRight
+							button.button.button-primary(type="submit") Subscribe
+				.col-md-4
+					ul.social-list
+						li.wow.fadeInUp(data-wow-dalay=".1s"): a(href="#"): span.icon.fa.fa-linkedin
+						li.wow.fadeInUp(data-wow-dalay=".2s"): a(href="#"): span.icon.fa.fa-twitter
+						li.wow.fadeInUp(data-wow-dalay=".3s"): a(href="#"): span.icon.fa.fa-facebook
+						li.wow.fadeInUp(data-wow-dalay=".4s"): a(href="#"): span.icon.fa.fa-instagram
+	.footer-classic__body
+		.container
+			.row.row-30
+				.col-xl-3.order-1.wow.fadeInLeft
+					+logo
+					p.text-style-1 Our medical center offers the widest range of services in the area. We strive to provide our patients with the most high-quality help by top-notch experts in their fields.
+				.col-sm-6.col-xl-3.col-md-3.inset-xl-left-90.order-2
+					h6.title-decorated.wow.fadeInUp Departments
+					ul.footer-nav-list
+						li.wow.fadeInUp(data-wow-dalay=".1s"): a(href="#") Laboratory Analysis
+						li.wow.fadeInUp(data-wow-dalay=".2s"): a(href="#") Pediatric
+						li.wow.fadeInUp(data-wow-dalay=".3s"): a(href="#") Rehabilitation
+						li.wow.fadeInUp(data-wow-dalay=".4s"): a(href="#") Gynaecological
+						li.wow.fadeInUp(data-wow-dalay=".5s"): a(href="#") Ophthalmology
+						li.wow.fadeInUp(data-wow-dalay=".6s"): a(href="#") Cardiac
+				.col-xl-4.col-md-6.inset-xl-left-45.order-4.order-xl-3
+					h6.title-decorated.wow.fadeInRight Latest news
+					.news-thumbnail.wow.fadeInRight(data-wow-dalay=".2s")
+						a(href="single-blog-post.html").news-thumbnail__media
+							+img('thumbnail-mini-1-102x90')
+						.news-thumbnail__caption
+							a(href="single-blog-post.html").title Aspirin for prevention
+							span.date May 4, 2019
+					.news-thumbnail.wow.fadeInRight(data-wow-dalay=".3s")
+						a(href="single-blog-post.html").news-thumbnail__media
+							+img('thumbnail-mini-2-102x90')
+						.news-thumbnail__caption
+							a(href="single-blog-post.html").title New operating suites
+							span.date March 4, 2019
+				.col-sm-6.col-xl-2.col-md-3.order-2.order-xl-4
+					h6.title-decorated.wow.fadeInUp Quick Links
+					ul.footer-nav-list
+						li.wow.fadeInUp(data-wow-dalay=".1s"): a(href="index.html") Home
+						li.wow.fadeInUp(data-wow-dalay=".2s"): a(href="departments.html") Departments
+						li.wow.fadeInUp(data-wow-dalay=".3s"): a(href="about-us.html") About Us
+						li.wow.fadeInUp(data-wow-dalay=".4s"): a(href="blog.html") Blog
+						li.wow.fadeInUp(data-wow-dalay=".5s"): a(href="contacts.html") Contacts
+
+	.footer-classic__aside
+		.container
+			.row.row-10.flex-column-reverse.flex-sm-row
+				.col-sm-6.text-center.text-md-left.wow.fadeInLeft
+					+rights
+				.col-sm-6.text-center.text-md-right.wow.fadeInRight
+					a.privacy-link( href='privacy-policy.html' ) Privacy Policy
+

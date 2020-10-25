@@ -1,0 +1,329 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Blog'
+
+//- Includes
+include ../components/icon-box-creative
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-1.png',
+		title: 'Best Care From MedCare Clinic'
+	}).custom-mode-1
+
+	section.section.section-lg.bg-default
+		.container
+			h2.text-center Month: May 2019
+			.row.row-50
+				.col-lg-8
+					.blog-layout-classic
+						.row.row-40
+							.col-12
+								.blog-layout-post
+									h4: a(href="single-blog-post.html") Aspirin for prevention
+									ul.blog-layout-post__detail-list
+										li
+											span By
+											a(href="#") admin
+										li
+											span In
+											a(href="#") Cardiac
+											| ,
+											a(href="#") Pediatric
+										li Posted May 4, 2019
+									+img('blog-3-770x480')
+									p.blog-layout-post__caption Ubi est salvus acipenser? Victrixs resistere in fatalis hortus! Bi-color, clemens toruss acceleratrix acquirere de altus, superbus consilium.
+									.blog-layout-post__tags
+										span Tags:
+										a(href="#") Doctor
+									.blog-layout-post__details
+										a.comment(href="single-blog-post.html")
+											span.icon.fa.fa-comment
+											span.comment-count 0
+										a(href="single-blog-post.html").button.button-xs.button-primary More
+							.col-12
+								.blog-layout-post
+									h4: a(href="single-blog-post.html") New operating suites
+									ul.blog-layout-post__detail-list
+										li
+											span By
+											a(href="#") admin
+										li
+											span In
+											a(href="#") Cardiac
+											| ,
+											a(href="#") Pediatric
+										li Posted May 4, 2019
+									+img('blog-2-770x480')
+									p.blog-layout-post__caption Nobilis parss ducunt ad terror. Apolloniatess sunt lunas de primus adgium. Fatalis, placidus nixuss acceleratrix imperium de brevis, fortis tabes.
+									.blog-layout-post__tags
+										span Tags:
+										a(href="#") Doctor
+									.blog-layout-post__details
+										a.comment(href="single-blog-post.html")
+											span.icon.fa.fa-comment
+											span.comment-count 0
+										a(href="single-blog-post.html").button.button-xs.button-primary More
+
+							.col-12
+								.blog-layout-post
+									h4: a(href="single-blog-post.html") Epidurals increase in popularity
+									ul.blog-layout-post__detail-list
+										li
+											span By
+											a(href="#") admin
+										li
+											span In
+											a(href="#") Cardiac
+											| ,
+											a(href="#") Pediatric
+										li Posted May 4, 2019
+									+img('blog-3-770x480')
+									p.blog-layout-post__caption Cum rumor assimilant, omnes orexises desiderium barbatus, fatalis brabeutaes. Cum parma cadunt, omnes deuses gratia magnum, grandis accentores.
+									.blog-layout-post__tags
+										span Tags:
+										a(href="#") Doctor
+									.blog-layout-post__details
+										a.comment(href="single-blog-post.html")
+											span.icon.fa.fa-comment
+											span.comment-count 0
+										a(href="single-blog-post.html").button.button-xs.button-primary More
+							.col-12
+								.blog-layout-post
+									h4: a(href="single-blog-post.html") Innovative Growth Strategy
+									ul.blog-layout-post__detail-list
+										li
+											span By
+											a(href="#") admin
+										li
+											span In
+											a(href="#") Cardiac
+											| ,
+											a(href="#") Pediatric
+										li Posted May 4, 2019
+									+img('blog-4-770x480')
+									p.blog-layout-post__caption Exsul persuaderes, tanquam fortis mortem. Est noster calceus, cesaris. Emeritis, superbus vigils foris visum de clemens, velox repressor.
+									.blog-layout-post__tags
+										span Tags:
+										a(href="#") Doctor
+									.blog-layout-post__details
+										a.comment(href="single-blog-post.html")
+											span.icon.fa.fa-comment
+											span.comment-count 0
+										a(href="single-blog-post.html").button.button-xs.button-primary More
+							.col-12
+								.blog-link-group
+									a.old(href="#") Older Post
+									a.new(href="#") Newest Posts
+				.col-lg-4
+					.blog-aside-classic
+						.row.row-xl-50
+							.col-12
+								.blog-aside-classic__item
+									form.rd-search.form-search.blog-aside-search(action='search-results.html', method='GET')
+										.form-wrap
+											label.form-label(for="search-form") Search blog...
+											input#search-form.form-input(type='text', name='s', autocomplete='off')
+										.form-button
+											button(type="submit").button-search.fa.fa-search.button-primary.button
+							.col-12
+								.blog-aside-classic__item
+									h5 RECENT POSTS
+									ul.blog-post-list
+										li: a(href="#") Aspirin for prevention
+										li: a(href="#") New operating suites
+										li: a(href="#") Epidurals increase in popularity
+							.col-12
+								.blog-aside-classic__item
+									h5 Tags
+									ul.blog-post-tag-list
+										li: a(href="#") Doctor
+										li: a(href="#") News
+							.col-12
+								.blog-aside-classic__item
+									.booking-calendar.booking-calendar-aside#chapters-select
+										.rdc-panel
+											span.rdc-month
+											=' '
+											span.rdc-fullyear
+											.rdc-panel-nav
+												a.rdc-prev
+												a.rdc-next
+
+										.rdc-table
+										.rdc-events
+											a.rdc-events_close
+											ul.list-unstyled
+												li.rdc-event(data-date='01/15/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span January 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+
+												li.rdc-event(data-date='12/16/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span February 14, 2019]
+														tbody.text-center
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+
+												li.rdc-event(data-date='12/12/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span March 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+												li.rdc-event(data-date='12/14/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span April 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+												li.rdc-event(data-date='01/10/2020')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span May 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+												li.rdc-event(data-date='01/12/2020')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span June 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+							.col-12
+								.blog-aside-classic__item
+									h5 Archives
+									ul.blog-post-acrhive-list
+										li: a(href="#") May 2019
+										li: a(href="#") April 2019
+										li: a(href="#") March 2019
+										li: a(href="#") July 2019
+
+	include ../sections/_section-modal
+	//Footer
+	include ../sections/_footer-classic

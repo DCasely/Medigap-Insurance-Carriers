@@ -1,0 +1,114 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Doctors'
+
+//- Includes
+include ../components/icon-box-creative
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-4.jpg',
+		title: 'Best Care From MedCare Clinic'
+	})
+
+	section.section.section-lg.bg-default
+		.container
+			.pre-title.wow.fadeInLeft Departments
+			h2.wow.fadeInLeft(data-wow-dalay=".2s")
+				| We provide  #[span.text-primary assistance] in
+				br.d-lg-block.d-none
+				| various directions
+			.row.row-30
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".1s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-1-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Mike Rolson
+							span Pediatrician
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".2s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-2-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Scarlett Yohanson
+							span Surgeon
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".3s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-3-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Andrew Karnegi
+							span Traumatologist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".4s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-5-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Tommy Henderson
+							span Neuropathologist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".5s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-6-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Emili Klark
+							span Cardiologist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".6s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-7-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Tom Holand
+							span Dentist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".7s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-8-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Met Daimon
+							span Gastroenterologist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".8s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-9-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Kriss Hemsfort
+							span Ophthalmologist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay=".9s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-10-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Ann Edinson
+							span Laboratory assistant
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay="1s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-11-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Nikolas Ferdinand
+							span Urologist
+				.col-md-4.col-sm-6.wow.fadeInUp(data-wow-dalay="1.1s")
+					.team-member-profile
+						.team-member-profile__media
+							+img('team-12-370x460')
+						.team-member-profile__caption
+							h5: a(href="single-doctor.html") Joan Karlos
+							span Surgeon
+
+
+
+
+
+	//Testimonials
+	include ../sections/_testimonials
+
+	//Contacts Us
+	include ../sections/_contact-us
+
+	//Footer
+	include ../sections/_footer-classic

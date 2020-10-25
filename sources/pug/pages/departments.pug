@@ -1,0 +1,98 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Departments'
+
+//- Includes
+include ../components/icon-box-creative
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-3.jpg',
+		title: 'Best Care From MedCare Clinic'
+	})
+
+	section.section.section-lg.bg-default
+		.container
+			.pre-title.wow.fadeInLeft Departments
+			h2.wow.fadeInLeft(data-wow-dalay=".2s")
+				| We provide  #[span.text-primary assistance] in
+				br.d-lg-block.d-none
+				| various directions
+			.row.row-30
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".1s")
+					+icon-box-modern({
+						src: 'medical-icon-1-60x64',
+						title: 'Pediatrics',
+						caption: 'Our pediatric hospital utilizes state-of-the-art technology and employs a team of true experts.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".2s")
+					+icon-box-modern({
+						src: 'medical-img-2-64x64',
+						title: 'Neurology',
+						caption: 'We utilize the latest advances in diagnostics and treatment to ensure the best outcomes.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".3s")
+					+icon-box-modern({
+						src: 'medical-img-3-82x60',
+						title: 'Urology',
+						caption: 'We have expertise in sexual medicine, male and female urinary incontinence, erectile dysfunction.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".4s")
+					+icon-box-modern({
+						src: 'medical-img-4-44x64',
+						title: 'Cardiology',
+						caption: 'Your heart is in the best hands at our state-of-the-art cardiovascular institute.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".5s")
+					+icon-box-modern({
+						src: 'medical-img-5-54x62',
+						title: 'Dental Care',
+						caption: 'MedCare offers great dental care including cosmetic dental implants and emergency care.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".6s")
+					+icon-box-modern({
+						src: 'medical-img-6-70x60',
+						title: 'Pulmonary',
+						caption: 'Our endoscopic procedures include bronchoscopy, thoracentesis, and chest tube insertion.'
+					})
+
+
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".1s")
+					+icon-box-modern({
+						src: 'medical-img-7-44x64',
+						title: 'Traumatology',
+						caption: 'Trauma Surgery is a division of our Department of Surgery, and our trauma team is available 24 hours.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".2s")
+					+icon-box-modern({
+						src: 'medical-img-8-52x62',
+						title: 'X-Ray',
+						caption: 'We utilize PACS/Voice Recognition with incorporated Teleradiology for medical image reporting.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".3s")
+					+icon-box-modern({
+						src: 'medical-img-9-62x48',
+						title: 'Ophthalmologist',
+						caption: 'MedCare is a state-of-the-art facility that provides routine checkups for adults and children.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".4s")
+					+icon-box-modern({
+						src: 'medical-img-10-64x56',
+						title: 'Gastroenterologist',
+						caption: 'Providing comprehensive care for the diagnosis and treatment of diseases of the digestive tract.'
+					})
+				.col-sm-8.col-md-6.col-lg-4.wow.fadeInUp(data-wow-dalay=".5s")
+					+icon-box-modern({
+						src: 'medical-img-11-46x62',
+						title: 'Laboratory',
+						caption: 'All your analysis will be done in time and on the highest level in our laboratory.'
+					})
+
+	//Contacts Us
+	include ../sections/_contact-us
+
+	//Footer
+	include ../sections/_footer-classic

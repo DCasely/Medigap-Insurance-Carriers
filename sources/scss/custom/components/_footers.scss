@@ -1,0 +1,74 @@
+/** @section Footers */
+
+// Footer Classic
+.footer-classic {
+	background: $secondary;
+	.social-list{
+		justify-content: center;
+		@include media-breakpoint-up(xl) {
+			justify-content: flex-end;
+		}
+		a{
+			@include link($white,$primary);
+		}
+	}
+	&__head{
+		padding: 40px 0;
+		border-bottom: 1px solid rgba(#f0f0f0, .2);
+		.footer-subscribe-form{
+			@include media-breakpoint-up(xl) {
+				margin-right: 70px;
+			}
+			margin-left: 0;
+			margin-bottom: 0;
+			transform: none;
+			.form-button{
+				.button{
+					font-size: 16px;
+					padding: 16px 36px;
+					min-height: 59px;
+					display: inline-flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+	&__body{
+		padding: 50px 0;
+		.brand + * {
+			@include media-breakpoint-up(xl) {
+				margin-top: 30px;
+
+			}
+		}
+		@include media-breakpoint-up(xl) {
+			padding: 70px 0;
+		}
+	}
+	&__aside{
+		background-color: $secondary-dark;
+		padding: 25px 0;
+
+	}
+	.title-decorated + *{
+		margin-top: 15px;
+		@include media-breakpoint-up(xl) {
+			margin-top: 35px;
+		}
+	}
+	.title-decorated{
+		margin-top: 0;
+	}
+	.title-decorated{
+		padding-bottom: 10px;
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 18px;
+		}
+	}
+	.news-thumbnail + .news-thumbnail {
+		margin-top: 18px;
+	}
+}

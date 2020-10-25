@@ -1,0 +1,69 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Buttons'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-1.png',
+	}).custom-mode-1
+
+	//Button Sizes
+	section.section.section-md.bg-default.text-center
+		.container
+			h4 Button Sizes
+			p 4 different sizes: super, large, default and small.
+			.group-xl
+				.button.button-xl.button-primary Super Size
+				.button.button-lg.button-primary Large size
+				.button.button-primary Default size
+				.button.button-sm.button-primary Small size
+
+	hr
+
+	//Button Shapes
+	section.section.section-md.bg-default.text-center
+		.container
+			h4 Button Shapes
+			p 4 different shapes: default, round, round 2, and circle.
+			.group-xl
+				.button.button-primary Default
+				.button.button-primary.button-round-1 Round 1
+				.button.button-primary.button-round-2 Round 2
+				.button.button-primary.button-circle Circle
+
+	hr
+
+	//Buttons with Icons
+	section.section.section-md.bg-default.text-center
+		.container
+			h4 Buttons with Icons
+			p Buttons are fully integrated with 900+ icons.
+			.group-xl
+				.button.button-icon.button-icon-right.button-primary
+					span.icon.mdi.mdi-account
+					| Icon right
+				.button.button-icon.button-icon-left.button-primary
+					span.icon.mdi.mdi-account
+					| Icon left 
+				.button.button-icon.button-icon-right.button-default-outline
+					span.icon.mdi.mdi-account
+					| Icon right
+				.button.button-icon.button-icon-left.button-default-outline
+					span.icon.mdi.mdi-account
+					| Icon left
+
+	hr
+
+	//Buttons with Shadow
+	section.section.section-md.bg-default.text-center
+		.container
+			h4 Buttons with Shadow
+			p Enhance your buttons with a shadow effect.
+			.group-xl
+				.button.button-primary.button-circle.button-shadow Shadow
+				.button.button-ghost.button-circle.button-shadow Shadow
+
+	include ../sections/_footer-classic

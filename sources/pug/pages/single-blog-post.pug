@@ -1,0 +1,342 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Single Blog Post'
+
+//- Includes
+include ../components/icon-box-creative
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-1.png',
+		title: 'Best Care From MedCare Clinic'
+	}).custom-mode-1
+
+	section.section.section-sm.bg-primary.single-post-section
+		.container
+			.row.justify-content-center
+				.col-lg-8
+					.single-post-caption
+						.single-post-caption__user
+							+img('user-profile-140x140.png')
+							span Admin
+						h2.text-center ASPIRIN FOR PREVENTION
+						ul.single-post-caption__details-list
+							li
+								span In
+								a(href="#") Pediatric
+								| ,
+								a(href="#") Cardiology
+							li
+								span.icon.fa.fa-clock-o
+								span Posted May 4, 2019
+							li
+								span.icon.fa.fa-tag
+								a(href="#") Doctor
+							li
+								a(href="#")
+									span.icon.fa.fa-comment-o
+									span 0 Comment(s)
+
+
+
+	section.section.section-lg.bg-default
+		.container
+			.row.row-50
+				.col-lg-8
+					.single-post-layout
+						p.font-italic E-commerce sites have taken retail online and with such its audience. Once representatives used to be able to physically approach.
+						p Est nobilis solem, cesaris. Ecce, camerarius abactor! Vita congregabos, tanquam ferox victrix. Classis, competition, et domina. Nunquam manifestum fluctus. Nunquam reperire mortem. Ubi est primus epos? Hercle, orgia mirabilis!. Indictios favere! Cum equiso prarere, omnes exemplares acquirere regius, neuter orgiaes. Secula assimilants, tanquam peritus orgia. A falsis, exsul peritus orexis. Manducare absolute ducunt ad azureus gemna. Mirabilis resistentia solite desideriums habitio est. Hercle, nutrix placidus!, festus luba! Cum xiphias potus, omnes armariumes tractare bassus, germanus urbses. Fortis torus unus apertos zeta est.
+						.post-divider
+						h2 There Are #[span.text-primary No Limits] to Define Your Style.
+						p Nutrix de gratis tus, resuscitabo cedrium! Axona de peritus mons, imitari rector! Zelus, accentor, et planeta. Eheu, indictio! Nunquam convertam barcas. Mensas sunt abnobas de fidelis particula. Nunquam attrahendam palus. Noster diatrias ducunt ad vigil. Victrixs ire in raptus moscua! Agripeta germanus mens est. Coordinatae de magnum lactea, gratia rumor! Ventus prareres, tanquam alter nuclear vexatum iacere. Altus, fidelis brodiums recte tractare de emeritis, audax musa. Noster adgiums ducunt ad sectam. Hercle, poeta fatalis!, lotus compater! Teres, peritus brodiums velox quaestio de bassus, superbus absolutio.
+						+img('blog-3-770x480')
+						span.media-caption Image Caption
+						p Cum nuptia studere, omnes bromiumes reperire talis, placidus messores. Bubos persuadere in lotus hamburgum! Amicitias resistere! Abactor potuss, tanquam superbus ionicis tormento. Germanus, clemens bursas unus carpseris de fidelis, bi-color terror.
+						+img('blog-2-770x480')
+						span.media-caption Image Caption
+						p Pol, raptus stella! Peregrinationes etiam ducunt ad bassus adiurator. Noster stellas ducunt ad barcas. Est dexter castor, cesaris. Nunquam transferre epos. Est emeritis abaculus, cesaris. Alter seculas ducunt ad vita. Cum caesium messis, omnes tabeses imperium nobilis, varius fraticinidaes.
+						p Palus de domesticus quadra, dignus abnoba! Fluctuis mori! Ubi est regius vox? Ire mechanice ducunt ad noster aonides. Cottas tolerare in barbatus antenna! Eheu. Vae. Lixas sunt lapsuss de altus byssus. Sunt sagaes locus talis, raptus consiliumes.
+						h2 You Get More with Lifetime Subscribtion
+						p Imbers sunt mineraliss de pius galatae. Sunt fluctuses desiderium superbus, velox stellaes. Magnum, talis cottas recte amor de superbus, lotus cacula. Altus zirbuss ducunt ad luba. Cum bursa prarere, omnes lumenes contactus castus, rusticus magisteres.
+						+img('blog-1-770x480')
+						span.media-caption Image Caption
+						p Nocere sensim ducunt ad germanus saga. Altus gemna una transferres demolitione est. Vortexs ire! Sunt classises reperire dexter, raptus medicinaes. Sunt fideses consumere germanus, lotus cannabises.
+						p.font-italic E-commerce sites have taken retail online and with such its audience. Once representatives used to be able to physically approach.
+						.row.row-50
+							.col-12
+								.article-nav-wrap
+									.row.row-narrow-60.row-20
+										.col-lg-6.col-sm-12
+											.article-nav.prev
+												span previous
+												h5: a(href="#") Aspirin for prevention
+										.col-lg-6.col-sm-12
+											.article-nav.next
+												span next
+												h5: a(href="#") New operating suites
+							.col-12
+								.post-group
+									.row.row-30
+										.col-md-6
+											.news-thumbnail
+												a(href="#").news-thumbnail__media
+													+img('thumbnail-mini-1-150x85')
+												.news-thumbnail__caption
+													a(href="#").title Aspirin for prevention
+													span.date May 4, 2019
+										.col-md-6
+											.news-thumbnail
+												a(href="#").news-thumbnail__media
+													+img('thumbnail-mini-2-150x85')
+												.news-thumbnail__caption
+													a(href="#").title New operating suites
+													span.date March 10, 2019
+										.col-md-6
+											.news-thumbnail
+												a(href="#").news-thumbnail__media
+													+img('thumbnail-mini-3-150x85')
+												.news-thumbnail__caption
+													a(href="#").title Epidurals increase in popularity
+													span.date July 5, 2019
+										.col-md-6
+											.news-thumbnail
+												a(href="#").news-thumbnail__media
+													+img('thumbnail-mini-4-150x85')
+												.news-thumbnail__caption
+													a(href="#").title Innovative Growth Strategy
+													span.date September 12, 2019
+							.col-12
+								.article-comment
+									h4 Leave a Reply
+									p Your email address will not be published. Required fields are marked *
+									form.rd-mailform.text-left.comment-form(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+										.form-wrap.form-comment-area
+											label.form-label(for="contact-message") Comment*
+											textarea#contact-message.form-input(name="message" data-constraints='@Required')
+										.form-wrap
+											label.form-label(for="contact-name") Name*
+											input#contact-name.form-input(type="text" name="name" data-constraints='@Required')
+										.form-wrap
+											label.form-label(for="contact-email") E-Mail*
+											input#contact-email.form-input(type="email" name="email" data-constraints='@Required @Email')
+										.form-wrap
+											label.form-label(for="contact-phone") Website
+											input#contact-phone.form-input(type="text" name="website")
+										.form-wrap
+											input#save-email(type="checkbox" name="save-email" class="checkbox-2")
+											label(class="checkbox-label" for="save-email") Save my name, email, and website in this browser for the next time I comment.
+										.form-button.text-center.text-lg-left
+											button(type="submit").button.button.button-primary submit comment
+				.col-lg-4
+					.blog-aside-classic
+						.row.row-xl-50
+							.col-12
+								.blog-aside-classic__item
+									form.rd-search.form-search.blog-aside-search(action='search-results.html', method='GET')
+										.form-wrap
+											label.form-label(for="search-form") Search blog...
+											input#search-form.form-input(type='text', name='s', autocomplete='off')
+										.form-button
+											button(type="submit").button-search.fa.fa-search.button-primary.button
+							.col-12
+								.blog-aside-classic__item
+									h5 RECENT POSTS
+									ul.blog-post-list
+										li: a(href="#") Aspirin for prevention
+										li: a(href="#") New operating suites
+										li: a(href="#") Epidurals increase in popularity
+							.col-12
+								.blog-aside-classic__item
+									h5 Tags
+									ul.blog-post-tag-list
+										li: a(href="#") Doctor
+										li: a(href="#") News
+							.col-12
+								.blog-aside-classic__item
+									.booking-calendar.booking-calendar-aside#chapters-select
+										.rdc-panel
+											span.rdc-month
+											=' '
+											span.rdc-fullyear
+											.rdc-panel-nav
+												a.rdc-prev
+												a.rdc-next
+
+										.rdc-table
+										.rdc-events
+											a.rdc-events_close
+											ul.list-unstyled
+												li.rdc-event(data-date='01/15/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span January 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+
+												li.rdc-event(data-date='12/16/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span February 14, 2019]
+														tbody.text-center
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+
+												li.rdc-event(data-date='12/12/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span March 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+												li.rdc-event(data-date='12/14/2019')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span April 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+												li.rdc-event(data-date='01/10/2020')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span May 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+
+												li.rdc-event(data-date='01/12/2020')
+													table.table.rdc-event-booking-table
+														thead
+															tr
+																th(colspan="3"): p.heading-6 Available Appointments on #[span June 14, 2019]
+														tbody
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 8:00am - 9:00am
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+															tr
+																td
+																	dl.dl-horizontal-mod-1
+																		dt: span.icon.icon-md.icon-primary.fa.fa-clock-o
+																		dd
+																			time(datetime="2019") 10:30am - 11:00am
+
+																td
+																	span 2 time slots available
+																td: button.button.button-primary(data-toggle="modal" data-target="#appointment") Book Appointment
+							.col-12
+								.blog-aside-classic__item
+									h5 Archives
+									ul.blog-post-acrhive-list
+										li: a(href="#") May 2019
+										li: a(href="#") April 2019
+										li: a(href="#") March 2019
+										li: a(href="#") July 2019
+
+
+	include ../sections/_section-modal
+	//Footer
+	include ../sections/_footer-classic

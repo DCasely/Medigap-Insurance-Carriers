@@ -1,0 +1,134 @@
+/**
+*
+* RD Navbar Classic
+* =====================================================
+*/
+.rd-navbar-classic {
+	background: transparent;
+	.rd-navbar-aside-outer{
+		border-bottom: 1px solid rgba($white,.4)
+	}
+	&.rd-navbar-static {
+
+
+		.rd-navbar-aside-outer,
+		.rd-navbar-main-outer {
+			padding-left: $grid-gutter-width / 2;
+			padding-right: $grid-gutter-width / 2;
+		}
+
+		.rd-navbar-aside,
+		.rd-navbar-main {
+			max-width: 1170px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.rd-navbar-aside {
+			padding: 9px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.contact-list{
+				font-family: $font-family-sec;
+				font-size: 14px;
+				display: flex;
+				align-items: center;
+				letter-spacing: -.02em;
+				li{
+					a{
+						@include link($white,$white);
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+					.icon{
+						color: $white;
+					}
+				}
+				li + li{
+					@include media-breakpoint-up(lg) {
+						margin-left: 45px;
+					}
+				}
+			}
+			.social-list{
+				li{
+					a{
+						@include link($white,$primary);
+					}
+				}
+			}
+		}
+
+		.rd-navbar-main {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 0;
+		}
+
+		// RD Navbar Brand
+		.rd-navbar-brand {
+			.brand-logo-dark{
+				display: none;
+			}
+			.brand-logo-light{
+				display: block;
+			}
+			img {
+				width: auto;
+				height: auto;
+				max-width: 147px;
+				max-height: 22px;
+			}
+		}
+
+		.rd-navbar-main-element {
+			display: flex;
+			align-items: center;
+		}
+
+		&.rd-navbar--is-stuck,
+		&.rd-navbar--is-clone {
+			border-bottom-color: nth($rd-navbar-border, 3);
+			.rd-navbar-aside-outer {
+				display: none;
+			}
+
+			.rd-navbar-main {
+				padding: 17px 0;
+			}
+
+			.rd-navbar-nav-item {
+				> .rd-navbar-submenu {
+					margin-top: 17px;
+				}
+			}
+		}
+	}
+
+	// Fixed 
+	&.rd-navbar-fixed {
+		.rd-navbar-aside{
+			line-height: 2;
+			text-align: center;
+			.contact-list{
+				a{
+					@include link($gray-700,$primary)
+				}
+				.icon{
+					color: $primary;
+				}
+			}
+			.social-list{
+				margin-top: 10px;
+				justify-content: center;
+				a{
+					@include link($primary,$secondary)
+				}
+			}
+		}
+	}
+}

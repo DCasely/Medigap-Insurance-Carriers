@@ -1,0 +1,128 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Single Doctor'
+
+//- Includes
+include ../components/icon-box-creative
+include ../components/lists
+include ../components/card
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-6.jpg',
+		title: 'Learn more about our specialists'
+	})
+
+	section.section.section-lg.bg-default
+		.container
+			.row.row-30
+				.col-lg-8
+					.blog-layout-main
+						.row-xl-60
+							.col-12
+								.profile-details
+									.profile-details__media.wow.fadeInLeft
+										+img('single-blog-post-1-270x310')
+									.profile-details__caption
+										.title-sm.wow.fadeInUp(data-wow-dalay=".1s") Mike Rolson
+										p.wow.fadeInUp(data-wow-dalay=".2s") Ubi est neuter aonides? Equiso bi-color sensorem est. Danista, calcaria, et devirginato. Pes accelerares, tanquam flavum gallus. Fatalis, teres messors sensim imitari de emeritis, clemens tabes. Pius, secundus barcass velox vitare de grandis, camerarius imber.
+										.offset-xl-top-20
+											+img('signature-169x59.png')(data-wow-dalay=".2s").wow.fadeInUp
+							.col-12
+								ul.striped-list
+									li.wow.fadeInUp(data-wow-dalay=".1s")
+										span.title Speciality
+										span Pediatrician
+									li.wow.fadeInUp(data-wow-dalay=".2s")
+										span.title Degress
+										span Harvard University
+									li.wow.fadeInUp(data-wow-dalay=".3s")
+										span.title Areas of Expertise
+										ul.list-marked
+											li Pediatrician
+											li Traumatologist
+											li Surgeon
+									li.wow.fadeInUp(data-wow-dalay=".4s")
+										span.title Adress2
+										span Office 12, Hall A
+									li.wow.fadeInUp(data-wow-dalay=".5s")
+										span.title Gender
+										span Male
+
+
+							.col-12
+								.profile-details.modifed
+									.profile-details__media.wow.fadeInLeft
+										+img('single-blog-post-2-370x365')
+									.profile-details__caption
+										#accordion3.card-group-custom.card-group-classic.wow.fadeInRight( data-wow-dalay=".2s" role='tablist' aria-multiselectable='false' )
+											+card({
+												parentId: 'accordion3',
+												title: 'Oncological diseases',
+												show: true
+											}).card-corporate
+												p We are on the leading edge of cancer care, providing the full continuum of cancer treatments and supportive care services in a single convenient location. Our cancer specialists are experts at diagnosing and treating cancer tumors.
+
+											+card({
+												parentId: 'accordion3',
+												title: 'Viral infections'
+											}).card-corporate
+												p Viral infections generally must run their course, with treatment aimed at easing symptoms and providing some relief while you’re sick. Sometimes, antiviral medications are prescribed for specific infections.
+
+											+card({
+												parentId: 'accordion3',
+												title: 'Nature and technology'
+											}).card-corporate
+												p Nowadays people should balance their life between technological progress and natural life. Technogenic influence may cause different diseases, including cancer. It’s crucial to defend yourself from such affection.
+
+											+card({
+												parentId: 'accordion3',
+												title: 'Physical Rehabilitation'
+											}).card-corporate
+												p A specialized rehabilitation team helps patients achieve the highest quality of life by preventing disability and improving independence through a multi-disciplinary approach which includes a lot of types of therapy.
+							.col-12
+								p Cum calceus messis, omnes exemplares imperium camerarius, rusticus lactaes. Pol, a bene exsul, fidelis galatae! Competitions ortum in domesticus vasa! Cur capio cantare? Medicina emeritis equiso est. Azureus, festus barcass semper talem de regius, alter impositio.
+				.col-lg-4
+					.blog-layout-aside
+						.blog-layout-aside__pre-title When we work
+							.blog-layout-aside__title Doctors work schedule
+							ul.blog-layout-aside__list
+								li
+									span.week-day Monday
+									span.hours 8:00 - 18:00
+								li
+									span.week-day Tuesday
+									span.hours 10:00 - 20:00
+								li
+									span.week-day Wednesday
+									span.hours 8:00 - 18:00
+								li
+									span.week-day Thursday
+									span.hours 10:00 - 20:00
+								li
+									span.week-day Friday
+									span.hours 8:00 - 18:00
+								li
+									span.week-day Saturday
+									span.hours Weekend
+								li
+									span.week-day Sunday
+									span.hours Weekend
+					.blog-layout-aside-service
+						+img('call-img-51x54.png')
+						.blog-layout-aside-service__media
+						.blog-layout-aside-service__info-group
+							h6 Emergency Cases
+							a(href="tel:#") 800 123 45 67
+
+	//Testimonials
+	include ../sections/_testimonials
+
+	//Contacts Us
+	include ../sections/_contact-us
+
+	//Footer
+	include ../sections/_footer-classic

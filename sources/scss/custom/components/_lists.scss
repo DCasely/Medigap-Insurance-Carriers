@@ -1,0 +1,225 @@
+/** @section Lists */
+
+// Vertical list
+.list {
+	> li + li {
+		margin-top: 10px;
+	}
+}
+
+.list-xs > li + li {
+	margin-top: 5px;
+}
+
+.list-sm > li + li {
+	margin-top: 10px;
+}
+
+.list-md > li + li {
+	margin-top: 18px;
+}
+
+.list-lg > li + li {
+	margin-top: 25px;
+}
+
+.list-xl > li + li {
+	margin-top: 30px;
+}
+
+@include media-breakpoint-up(md) {
+	.list-xl > li + li {
+		margin-top: 60px;
+	}
+}
+
+
+// List inline
+.list-inline {
+	> li {
+		display: inline-block;
+	}
+}
+
+html {
+	.list-inline-md {
+		@include spacing(20px, 8px);
+
+		@include media-breakpoint-up(lg) {
+			@include spacingX(30px);
+		}
+	}
+}
+
+
+// List terms
+.list-terms {
+	dt + dd {
+		margin-top: 15px;
+	}
+	dd + dt {
+		margin-top: 25px;
+	}
+}
+
+* + .list-terms {
+	margin-top: 25px;
+}
+
+
+// Index list
+.index-list {
+	counter-reset: li;
+
+	> li {
+		.list-index-counter {
+			&:before {
+				content: counter(li, decimal-leading-zero);
+				counter-increment: li;
+			}
+		}
+	}
+}
+
+
+// Marked list
+.list-marked {
+	text-align: left;
+
+	> li {
+		position: relative;
+		padding-left: 18px;
+
+		&::before {
+			position: absolute;
+			display: inline-block;
+			left: 0;
+			top: -2px;
+			content: "\f00c";
+			font: 400 14px/24px 'FontAwesome';
+			color: $secondary;
+		}
+	}
+
+	> li + li {
+		margin-top: 10px;
+	}
+}
+
+* + .list-marked {
+	margin-top: 15px;
+}
+
+p + .list-marked {
+	margin-top: 10px;
+}
+
+
+// Ordered List
+.list-ordered {
+	counter-reset: li;
+	text-align: left;
+
+	> li {
+		position: relative;
+		padding-left: 25px;
+
+		&:before {
+			position: absolute;
+			content: counter(li, decimal) '.';
+			counter-increment: li;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 15px;
+			color: $gray-400;
+		}
+	}
+
+	> li + li {
+		margin-top: 10px;
+	}
+}
+
+* + .list-ordered {
+	margin-top: 15px;
+}
+
+.social-list{
+	display: flex;
+	align-items: center;
+	li + li{
+		margin-left: 18px;
+	}
+}
+
+.contacts-list{
+	.title{
+		font-size: 20px;
+		margin-bottom: 5px;
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 15px;
+		}
+		color: $gray-700;
+		font-weight: 400;
+		font-family: $font-family-sec;
+		@include media-breakpoint-up(xl) {
+			font-size: 22px;
+		}
+
+	}
+	li{
+		color: #616161;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-size: 18px;
+		line-height: 1.4;
+		text-align: left;
+		a{
+			@include link(#616161,$primary);
+		}
+		span + a{
+			margin-left: 5px;
+		}
+	}
+	li + li{
+		margin-top: 5px;
+	}
+}
+
+.footer-nav-list{
+	li + li{
+		margin-top: 12px;
+	}
+	a{
+		@include link($white,$primary)
+	}
+}
+
+
+.striped-list{
+	> li:nth-child(odd){
+		background-color: #f8f8f8;
+	}
+	> li{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 15px;
+		border-radius: 4px;
+
+		@media(max-width: 450px){
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		> *{
+			padding-left: 15px;
+			padding-top: 10px;
+		}
+		@include media-breakpoint-up(sm) {
+			justify-content: space-between;
+			padding: 15px 30px 25px 15px;
+		}
+	}
+}

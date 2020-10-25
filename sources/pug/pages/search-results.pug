@@ -1,0 +1,28 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Search Results'
+
+block page 
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-1.png',
+	}).custom-mode-1
+
+	//Search results
+	section.section-md
+		.container
+			.row.justify-content-center
+				.col-lg-9
+					//RD Search
+					form.rd-form.rd-search.rd-form-inline.search-form(action='search-results.html' method='GET')
+						.form-wrap
+							label.form-label(for='rd-search-form-input') Search
+							input.form-input(id='rd-search-form-input' type='text' name='s' autocomplete='off')
+						.form-wrap.form-button
+							button.button.button-primary(type='submit') Search
+
+					.rd-search-results
+
+	include ../sections/_footer-classic

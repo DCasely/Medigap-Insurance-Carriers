@@ -1,0 +1,103 @@
+/** @section Backgrounds */
+
+.context-dark {
+	@extend %context-dark;
+}
+
+%context-dark {
+	// Logo
+	.brand {
+		.brand-logo-dark {
+			display: none;
+		}
+
+		.brand-logo-light {
+			display: block;
+		}
+	}
+}
+
+%context-light {
+	// Logo
+	.brand {
+		.brand-logo-dark {
+			display: block;
+		}
+
+		.brand-logo-light {
+			display: none;
+		}
+	}
+}
+
+
+// Light Backgrounds
+.bg-default {
+	@include bg-behaviour($body-bg);
+}
+
+.bg-primary {
+	@include bg-behaviour($primary);
+}
+
+.bg-gray-100 {
+	@include bg-behaviour($gray-100);
+}
+
+.bg-gray-light{
+	background-color: $gray-light;
+}
+// Dark Backgrounds
+.bg-gray-700 {
+	@extend %context-dark;
+	@include bg-behaviour($gray-700);
+}
+
+
+// Accent Backgrounds
+.bg-primary {
+	@extend %context-dark;
+	& + & {
+		padding-top: 0;
+	}
+}
+
+
+// Background Image
+.bg-image {
+	background-size: cover;
+	background-position: center;
+}
+
+
+// Desktop only
+html:not(.tablet):not(.mobile) {
+	.bg-fixed {
+		@include media-breakpoint-up(lg) {
+			background-attachment: fixed;
+		}
+	}
+}
+
+
+.bg-image-1{
+	background: url('../images/home-bg-1.png')no-repeat center;
+	background-size: cover;
+}
+
+.bg-image-2{
+  @include media-breakpoint-up(xl) {
+		background: url('../images/bg-img-2.png') no-repeat left;
+		background-size: cover;
+  } 
+}
+
+.bg-image-3{
+	background: url('../images/bg-img-3.jpg')no-repeat top;
+	background-size: cover;
+}
+
+.bg-image-4{
+	background: url('../images/bg-img-4.jpg')no-repeat right center;
+	background-size: cover;
+}

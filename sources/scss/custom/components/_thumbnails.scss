@@ -1,0 +1,57 @@
+/** @section Thumbnails */
+
+// Figure Light
+.figure-light figcaption {
+	padding-top: 10px;
+	color: $gray-400;
+}
+
+
+.news-thumbnail{
+	display: flex;
+	align-items: flex-start;
+	margin-left: -15px;
+	> * {
+		margin-left: 15px;
+	}
+	&__media{
+		border-radius: 5px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			background-color: rgba($gray-700,.5);
+			border-radius: inherit;
+			opacity: 0;
+			transition: $transition-base;
+		}
+		&:hover{
+			&:before{
+				opacity: 1;
+				transition: $transition-base;
+			}
+		}
+		img{
+			border-radius: 5px;
+		}
+	}
+	&__caption{
+		display: flex;
+		flex-direction: column;
+		font-family: $font-family-sec;
+		font-weight: 400;
+		.title{
+			margin-bottom: 20px;
+			@include link($white,$primary);
+		}
+		.date{
+			font-size: 12px;
+			font-family: $font-family-base;
+			color: rgba(#fcffff,.5)
+		}
+	}
+}

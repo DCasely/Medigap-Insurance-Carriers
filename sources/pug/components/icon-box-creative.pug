@@ -1,0 +1,14 @@
+mixin icon-box-creative (obj)
+	.icon-box-creative(class=obj.mode)
+		.icon-box-creative__info
+			.icon-box-creative__media
+				+img(obj.src)
+			.icon-box-creative__title=obj.title
+			p=obj.caption
+
+mixin icon-box-modern (obj)
+	.icon-box-modern
+		.icon-box-modern__media
+			+img(obj.src + '.png')
+		h4: a(href="single-department.html")=obj.title
+		p=obj.caption

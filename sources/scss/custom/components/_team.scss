@@ -1,0 +1,24 @@
+.team-member-profile{
+  max-width: 370px;
+  margin-right: auto;
+  margin-left: auto;
+  &__media{
+    border-radius: 10px;
+    img{
+      border-radius: 10px;
+    }
+  }
+  &__caption{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 20px;
+    }
+    span{
+      color: #999999;
+      letter-spacing: .02em;
+    }
+  }
+}

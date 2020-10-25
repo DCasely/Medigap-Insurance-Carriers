@@ -1,0 +1,76 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'About Us'
+
+//- Includes
+include ../components/icon-box-classic
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-1.png',
+		title: 'Best Care From MedCare Clinic'
+	}).custom-mode-1
+
+	//About Us
+	section.section.section-lg.bg-default
+		.container
+			.row.row-narrow-60.row-30
+				.col-lg-6
+					+img('about-1-570x573').img-rounded.wow.fadeInLeft
+				.col-lg-6
+					.about-us-box
+						.pre-title.wow.fadeInRight About us
+						h2.wow.fadeInRight(data-wow-dalay=".2s") Voluptua te quas #[span.text-primary choro qui] partem utroque
+						p.wow.fadeInLeft MedCare Emergency Center is at the forefront of innovation in medical science and is the largest hospital in Brooklyn – the most populous borough in New York City. Our Heart&Vascular Institute ranks among the top 1% of hospitals in the US for heart attack and heart failure patient outcomes. Our Cancer Center is the only full-service center in Brooklyn, providing all treatment modalities. We’re continuously enriching and expanding services to meet the growing needs.
+						.about-us-box__detail
+							span.font-italic.title.wow.fadeInUp Steaven King
+							+img('signature-169x59.png').wow.fadeInUp
+
+
+
+	section.section.section-lg.bg-default
+		.container
+			.pre-title.wow.fadeInLeft Services
+			h2.wow.fadeInLeft(data-wow-dalay=".2s")
+				|We offer the #[span.text-primary best services] for
+				br
+				|you and your family
+			.row.row-30.row-narrow-50
+				.col-lg-4.col-md-6.wow.fadeInUp(data-wow-dalay=".1s")
+					+icon-box-classic({
+						src: 'service-4-34x44.png',
+						title: 'Qualified doctors',
+						caption: 'Our pediatric hospital utilizes state-of-the-art technology and employs a team of true experts.'
+					})
+				.col-lg-4.col-md-6.wow.fadeInUp(data-wow-dalay=".2s")
+					+icon-box-classic({
+						src: 'service-5-35x44.png',
+						title: 'Emergency Care',
+						caption: 'We are always ready to help you at the time you need help! Our emergency team is here for you!'
+					})
+				.col-lg-4.col-md-6.wow.fadeInUp(data-wow-dalay=".3s")
+					+icon-box-classic({
+						src: 'service-6-46x34.png',
+						title: '24 Hource Service',
+						caption: 'Anytime you need help, you may contact us and our receptionist will make an appointment for you.'
+					})
+
+
+
+	//CTA
+	include ../sections/_call-to-action-classic
+
+	//Team Slider
+	include ../sections/_team-slider
+
+	//Testimonials
+	include ../sections/_testimonials
+
+	//Contacts Us
+	include ../sections/_contact-us
+
+	//Footer
+	include ../sections/_footer-classic

@@ -1,0 +1,93 @@
+/** @section Text styling */
+
+// Text styles
+.text-italic {
+	font-style: italic;
+}
+
+.text-normal {
+	font-style: normal;
+}
+
+// Text decoration
+.text-underline {
+	text-decoration: underline;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+
+// Text weight
+.font-weight-thin {
+	font-weight: 100;
+}
+
+.font-weight-light {
+	font-weight: 300;
+}
+
+.font-weight-regular {
+	font-weight: 400;
+}
+
+.font-weight-medium {
+	font-weight: 500;
+}
+
+.font-weight-sbold {
+	font-weight: 600;
+}
+
+.font-weight-bold {
+	font-weight: 700;
+}
+
+.font-weight-ubold {
+	font-weight: 900;
+}
+
+// Text spacing
+.text-md{
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.text-spacing-0 {
+	letter-spacing: 0;
+}
+
+.text-primary {
+	color: $primary !important;
+}
+
+.text-dark{
+	color: $gray-700;
+}
+
+.text-style-1{
+	letter-spacing: -.02em;
+	line-height: 28px;
+}
+
+.title-decorated{
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 2px;
+		width: 60px;
+		background-color: rgba(#ebeff5,.4);
+	}
+}
+
+.text-default{
+	font-size: 16px;
+}
+
+.title-sm{
+	font-size: 20px;
+	font-weight: 600;
+	color: $gray-700;
+}

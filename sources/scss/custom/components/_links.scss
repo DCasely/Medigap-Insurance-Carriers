@@ -1,0 +1,41 @@
+/** @section Links */
+
+// Standard link style
+a {
+	transition: $transition-base;
+
+	&,
+	&:focus,
+	&:active,
+	&:hover {
+		text-decoration: $link-decoration;
+	}
+
+	@include link($link-color, $link-hover-color);
+
+	&[href*='tel'],
+	&[href*='mailto'] {
+		white-space: nowrap;
+	}
+}
+
+.link-hover {
+	color: $link-hover-color;
+}
+
+.link-press {
+	color: $link-press-color;
+}
+
+.privacy-link {
+	font-size: 14px;
+	@include link(#f9fbfc,$primary);
+}
+
+.link-inverse{
+	@include link($primary,$gray-700);
+}
+
+* + .privacy-link {
+	margin-top: 25px;
+}

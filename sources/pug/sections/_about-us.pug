@@ -1,0 +1,34 @@
+section.section.bg-default
+	.container
+		.row.justify-content-center
+			.col-xl-6.col-lg-10.wow.fadeInUp(data-wow-dalay=".1s")
+				.box-about-creative.section-lg
+					.pre-title.wow.fadeInLeft About Us
+					h2.wow.fadeInLeft(data-wow-dalay=".2s") Clinic with #[span.text-primary innovative] approach to treatment
+					p.text-md We provide the a wide range of medical services, so every person could have the opportunity to receive qualitative medical help.
+					.row.row-xl-30
+						.col-lg-6
+							+list-marked({
+								lists: [
+									{text: "Adult and Children's Trauma Center"},
+									{text: 'Birthing and Lactation Classes'},
+									{text: 'Dental and Oral Surgery'},
+									{text: 'Heart and Vascular Institute'},
+									{text: 'Interventional Cardiology'}
+								]
+							})
+						.col-lg-6
+							+list-marked({
+								lists: [
+									{text: 'Ear, Nose and Throat (ENT)'},
+									{text: 'Cardiac Support Groups'},
+									{text: 'Plastic Surgery'},
+									{text: 'Pediatric Emergency Care'}
+								]
+							})
+						.col-12
+							a(href="about-us.html").button.button-primary.btn-sm.button-sm read more
+			.col-xl-6.d-none.d-xl-block.wow.fadeInUp(data-wow-dalay=".2s")
+				.box-about-creative__media
+					+img('home-img-1-682x625.png')
+

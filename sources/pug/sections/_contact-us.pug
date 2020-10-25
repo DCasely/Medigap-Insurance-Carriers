@@ -1,0 +1,79 @@
+section.section.section-lg.bg-default
+	.container.text-center.text-sm-left
+		.pre-title.wow.fadeInLeft Contact us
+		h2.wow.fadeInLeft(data-wow-dalay=".2s")
+			|Make an appointment and
+			br
+			|#[span.text-primary visit our clinic]
+		.row.row-40
+			.col-xl-7
+				.row.row-xl-40.row-narrow-80
+					.col-sm-6.wow.fadeInUp
+						ul.contacts-list
+							li.title Los Angeles, CA
+							li 2566 Jim Rosa Lane, Suite 139
+							li Los Angeles 94108
+							li
+								span Email:
+								a(href="mailto:#") info@demolink.org
+							li
+								span Phone:
+								a(href="tel:#") +88 (0) 101 0000 000
+					.col-sm-6.wow.fadeInUp(data-wow-dalay=".2s")
+						ul.contacts-list
+							li.title San Francisco, CA
+							li 1314 Fairmont Avenue, Suite 54
+							li San Francisco 64723
+							li
+								span Email:
+								a(href="mailto:#") info@demolink.org
+							li
+								span Phone:
+								a(href="tel:#") +88 (0) 101 0000 000
+					.col-sm-6.wow.fadeInUp(data-wow-dalay=".3s")
+						ul.contacts-list
+							li.title New York, NY
+							li 198 West 21th Street, Suite 721
+							li New York NY 10010
+							li
+								span Email:
+								a(href="mailto:#") info@demolink.org
+							li
+								span Phone:
+								a(href="tel:#") +88 (0) 101 0000 000
+					.col-sm-6.wow.fadeInUp(data-wow-dalay=".4s")
+						ul.contacts-list
+							li.title Washington, DC
+							li Green Hill Road, Suite 195
+							li Washington 72847
+							li
+								span Email:
+								a(href="mailto:#") info@demolink.org
+							li
+								span Phone:
+								a(href="tel:#") +88 (0) 101 0000 000
+			.col-xl-5.col-lg-7
+				form.rd-form.rd-mailform.appointment-form(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+					.row.row-20
+						.col-12.wow.fadeInRight(data-wow-dalay=".2s")
+							.form-wrap
+								input#contact-name.form-input(type='text' name='name' data-constraints='@Required')
+								label.form-label(for='contact-name') Your Name
+
+						.col-md-12.wow.fadeInRight(data-wow-dalay=".3s")
+							.form-wrap
+								input#contact-phone.form-input(type='text' name='phone' data-constraints='@Numeric')
+								label.form-label(for='contact-phone') Phone
+
+						.col-12.wow.fadeInRight(data-wow-dalay=".4s")
+							.form-wrap
+								label.form-label(for='contact-message') Your Message
+								textarea#contact-message.form-input(name='message' data-constraints='@Required')
+
+						.col-12.wow.fadeInRight(data-wow-dalay=".5s")
+							button.button-primary.button.button-sm(type='submit') Make an Appointment
+
+
+
+
+

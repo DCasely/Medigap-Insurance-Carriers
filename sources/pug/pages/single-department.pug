@@ -1,0 +1,112 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Single Department'
+
+//- Includes
+include ../components/icon-box-creative
+include ../components/lists
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs({
+		bg: 'breadcrumbs-5.jpg',
+		title: 'Best Care From MedCare Clinic'
+	})
+
+	section.section.section-lg.bg-default
+		.container
+			.row.row-30
+				.col-lg-8
+					.blog-layout-main
+						.row.row-xl-4
+							.col-12
+								+img('blog-img-1-770x530').img-rounded
+								h2 Cardiology
+								p Solitudo cresceres, tanquam festus vita. Cursuss peregrinationes in raptus berolinum! Eheu. Cur burgus studere? Eheu. Impositio fortis imber est. Ignigenas favere in neuter cella! Hercle, rumor alter!, abactus! Elevatuss volare, tanquam ferox ignigena. Hercle, buxum castus!, clemens bubo! Altus heuretes recte imitaris historia est. Boreass sunt lacteas de fidelis abnoba. A falsis, magister emeritis lumen. Cum index credere, omnes elevatuses pugna superbus, rusticus gabaliumes. Cum urbs resistere, omnes abactuses acquirere ferox, rusticus adelphises.
+								p Nixus de mirabilis habitio, locus plasmator! Nunquam transferre buxum. Paluss unda! Ubi est noster secula? Luna cantares, tanquam bassus danista. Nunquam demitto impositio. Cum advena peregrinationes, omnes eposes reperire teres, azureus impositioes. Sunt nutrixes imperium pius, festus genetrixes. Persuadere etiam ducunt ad alter torus. Cur classis assimilant? Prarere hic ducunt ad ferox racana. Primus abnoba aegre resuscitabos bubo est. Victrix fatalis gemna est. Audax, festus tumultumques mechanice carpseris de fortis, albus luna.
+							.col-12
+								.title-sm Reprehenderit in voluptate velit esse cillum
+								.list-group
+									+list-marked({
+										lists: [
+											{text: "Adult and Children's Trauma Center"},
+											{text: 'Birthing and Lactation Classes'},
+											{text: 'Dental and Oral Surgery'},
+											{text: 'Heart and Vascular Institute'},
+											{text: 'Interventional Cardiology'}
+										]
+									})
+									+list-marked({
+										lists: [
+											{text: "Adult and Children's Trauma Center"},
+											{text: 'Birthing and Lactation Classes'},
+											{text: 'Dental and Oral Surgery'},
+											{text: 'Heart and Vascular Institute'},
+											{text: 'Interventional Cardiology'}
+										]
+									})
+							.col-12
+								p Apolloniatess ire in caelos! Castus mons virtualiter imitaris glos est. Vae, talis byssus! Ecce, humani generis! Fluctuss trabem in lentia! Persuadere patienter ducunt ad placidus xiphias. Fortiss assimilant! Volare tandem ducunt ad peritus solem. Habitios nocere, tanquam placidus racana. Sunt demolitionees promissio regius, barbatus gabaliumes. Cur adiurator cadunt? Altus nixuss ducunt ad ausus. Eras sunt sectams de barbatus demolitione. Brodium de brevis deus, convertam hilotae! Bi-color burgus semper experientias cannabis est.
+							.col-12
+								.row.row-20
+									.col-12
+										h2 Doctors
+									.col-6
+										.team-member-profile
+											.team-member-profile__media
+												+img('team-1-370x460')
+											.team-member-profile__caption
+												h5: a(href="single-doctor.html") Mike Rolson
+												span Pediatrician
+									.col-6
+										.team-member-profile
+											.team-member-profile__media
+												+img('team-2-370x460')
+											.team-member-profile__caption
+												h5: a(href="single-doctor.html") Scarlett Yohanson
+												span Surgeon
+							.col-12
+								p Pol, a bene olla. Neuter, fortis eposs hic pugna de domesticus, superbus gluten. Candidatus, pars, et bursa. A falsis, devatio superbus valebat. Toruss velum! Messis nunquam ducunt ad raptus cobaltum. Festus deus inciviliter reperires nomen est. Habenas sunt seculas de regius fides. Cur contencio accelerare? Fidelis, flavum glutens recte transferre de azureus, regius mons. Terror de nobilis fides, dignus lamia! Cum impositio manducare, omnes clabularees promissio fidelis, mirabilis turpises.
+				.col-lg-4
+					.blog-layout-aside
+						.blog-layout-aside__pre-title When we work
+							.blog-layout-aside__title Doctors work schedule
+							ul.blog-layout-aside__list
+								li
+									span.week-day Monday
+									span.hours 8:00 - 18:00
+								li
+									span.week-day Tuesday
+									span.hours 10:00 - 20:00
+								li
+									span.week-day Wednesday
+									span.hours 8:00 - 18:00
+								li
+									span.week-day Thursday
+									span.hours 10:00 - 20:00
+								li
+									span.week-day Friday
+									span.hours 8:00 - 18:00
+								li
+									span.week-day Saturday
+									span.hours Weekend
+								li
+									span.week-day Sunday
+									span.hours Weekend
+					.blog-layout-aside-service
+						+img('call-img-51x54.png')
+						.blog-layout-aside-service__media
+						.blog-layout-aside-service__info-group
+							h6 Emergency Cases
+							a(href="tel:#") 800 123 45 67
+
+	//Testimonials
+	include ../sections/_testimonials
+
+	//Contacts Us
+	include ../sections/_contact-us
+
+	//Footer
+	include ../sections/_footer-classic
