@@ -67,9 +67,16 @@ a:active {
   color: #fff;
 }
 
-.section-service-creative .button-group {
-  /* display: flex; */
-  /* justify-content: space-between; */
+/* ============================ */
+/* TABS */
+/* ============================ */
+
+.section-tabs .cta-buttons a:first-of-type {
+  margin-right: 10px;
+}
+
+.section-tabs .cta-buttons a:last-of-type {
+  margin-top: 0;
 }
 
 /* ============================ */
