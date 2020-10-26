@@ -12,15 +12,19 @@
 /* ============================ */
 
 .section-intro .company-logos {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 15px 0;
+}
+
+.section-intro .company-logos img {
+  padding: 10px;
+  max-height: 50px;
 }
 
 .intro-box .subtitle {
   font-weight: 600;
 }
 
-.section-intro .company-logos img {
-  height: 25px;
-}
+/* ============================ */
+/* INTRO */
+/* ============================ */
