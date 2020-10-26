@@ -26,5 +26,18 @@
 }
 
 /* ============================ */
-/* INTRO */
+/* ABOUT */
 /* ============================ */
+
+.section-about .pre-title {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.section-about .section-lg {
+  padding: 0;
+}
+
+.section-about .col-12 a {
+  margin-right: 10px;
+}
