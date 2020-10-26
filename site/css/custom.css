@@ -53,8 +53,12 @@
 }
 
 /* ============================ */
-/* ABOUT */
+/* SERVICE-CREATIVE */
 /* ============================ */
+
+.section-service-creative .icon-box-creative {
+  padding: 50px 0;
+}
 
 .section-service-creative a,
 a:focus,
@@ -63,8 +67,9 @@ a:active {
   color: #fff;
 }
 
-.section-service-creative .icon-box-creative {
-  padding: 50px 0 25px;
+.section-service-creative .button-group {
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 /* ============================ */
