@@ -2,6 +2,12 @@
 /* HEADER */
 /* ============================ */
 
+@media (min-width: 992px) {
+  .header-call-now {
+    display: none;
+  }
+}
+
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
   max-width: 270px;
   max-height: 58px;
@@ -50,6 +56,10 @@
 /* ABOUT */
 /* ============================ */
 
+.section-about .box-about-creative p {
+  margin: 10px 0;
+}
+
 .section-about .resp-container {
   position: relative;
   overflow: hidden;
@@ -74,6 +84,10 @@
   padding: 0;
 }
 
+.section-about .col-12 {
+  margin-bottom: 25px;
+}
+
 .section-about .col-12 a {
   margin-right: 10px;
 }
@@ -87,7 +101,7 @@
 }
 
 /* ============================ */
-/* ABOUT */
+/* CTA */
 /* ============================ */
 
 .cta-buttons a {
