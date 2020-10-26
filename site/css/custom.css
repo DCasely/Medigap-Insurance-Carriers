@@ -44,8 +44,9 @@
 
 @media (min-width: 1200px) {
   .bg-image-2 {
-    background: url(../images/medicare-card.jpg) no-repeat left;
+    background: url(../images/medicare-and-you.png) no-repeat left;
     background-size: cover;
+    background-position: top;
   }
 }
 
