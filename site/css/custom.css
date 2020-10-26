@@ -124,7 +124,37 @@ a:active {
 /* CTA */
 /* ============================ */
 
-.cta-buttons a {
-  margin-top: 0;
-  margin-right: 10px;
+.section-cta .media-creative {
+  margin: 0;
+}
+
+.section-cta .resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.section-cta .resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.section-cta .call-btn-1 {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+  .section-cta .call-btn-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-cta .call-btn-2 {
+    display: none;
+  }
 }
