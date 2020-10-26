@@ -41,3 +41,19 @@
 .section-about .col-12 a {
   margin-right: 10px;
 }
+
+@media (min-width: 1200px) {
+  .bg-image-2 {
+    background: url(../images/medicare-card.jpg) no-repeat left;
+    background-size: cover;
+  }
+}
+
+/* ============================ */
+/* ABOUT */
+/* ============================ */
+
+.cta-buttons a {
+  margin-top: 0;
+  margin-right: 10px;
+}
