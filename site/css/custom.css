@@ -165,3 +165,11 @@ a:active {
     display: none;
   }
 }
+
+/* ============================ */
+/* TESTIMONIALS */
+/* ============================ */
+
+.section-testimonials .review-box img {
+  width: 150px;
+}
