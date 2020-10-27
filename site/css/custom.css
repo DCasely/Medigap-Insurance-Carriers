@@ -128,6 +128,37 @@ a:active {
 }
 
 /* ============================ */
+/* COMPARE THE TOP PROVIDERS */
+/* ============================ */
+
+.section-compare .icon-box-modern img {
+  height: 75px;
+}
+
+.section-compare .cta-buttons,
+.section-compare .cta-buttons-2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.section-compare .cta-buttons a,
+.section-compare .cta-buttons-2 a {
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .section-compare .icon-box-modern .cta-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-compare .cta-buttons-2 {
+    display: none;
+  }
+}
+
+/* ============================ */
 /* CTA */
 /* ============================ */
 
