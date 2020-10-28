@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 400px) {
-  .button-md {
+  header .button-md {
     padding: 20px;
   }
 }
