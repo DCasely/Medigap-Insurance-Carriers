@@ -263,3 +263,14 @@ a:active {
   height: 100%;
   border: 0;
 }
+
+.footer-classic .contact-list {
+  margin: 5px 0;
+}
+
+.footer-classic a,
+a:focus,
+a:active {
+  font-size: 14px;
+  color: #fff;
+}
