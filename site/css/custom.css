@@ -201,6 +201,19 @@ a:active {
 /* TESTIMONIALS */
 /* ============================ */
 
+.bg-image-4 {
+  background: none;
+}
+
+.section-testimonials {
+  background: linear-gradient(
+    90deg,
+    rgba(10, 128, 198, 1) 0%,
+    rgba(255, 252, 255, 1) 30%,
+    rgba(10, 128, 198, 1) 100%
+  );
+}
+
 .section-testimonials .review-box img {
   width: 150px;
 }
