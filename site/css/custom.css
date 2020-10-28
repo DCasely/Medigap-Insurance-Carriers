@@ -159,20 +159,20 @@ a:active {
 }
 
 /* ============================ */
-/* CTA */
+/* LEARN EVERYTHING ABOUT MEDICARE */
 /* ============================ */
 
-.section-cta .media-creative {
+.section-about-medicare .media-creative {
   margin: 0;
 }
 
-.section-cta .resp-container {
+.section-about-medicare .resp-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
 }
 
-.section-cta .resp-iframe {
+.section-about-medicare .resp-iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -181,18 +181,18 @@ a:active {
   border: 0;
 }
 
-.section-cta .call-btn-1 {
+.section-about-medicare .call-btn-1 {
   margin-bottom: 25px;
 }
 
 @media (min-width: 992px) {
-  .section-cta .call-btn-1 {
+  .section-about-medicare .call-btn-1 {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
-  .section-cta .call-btn-2 {
+  .section-about-medicare .call-btn-2 {
     display: none;
   }
 }
