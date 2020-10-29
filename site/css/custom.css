@@ -280,3 +280,18 @@ a:active {
   font-size: 14px;
   color: #fff;
 }
+
+/* ============================ */
+/* UI TO TOP BUTTON */
+/* ============================ */
+
+.ui-to-top {
+  left: 15px;
+}
+
+@media (min-width: 576px) {
+  .ui-to-top {
+    left: 40px;
+    bottom: 40px;
+  }
+}
