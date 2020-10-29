@@ -82,18 +82,6 @@ a:active {
 }
 
 /* ============================ */
-/* TABS */
-/* ============================ */
-
-.section-tabs .cta-buttons a:first-of-type {
-  margin-right: 10px;
-}
-
-.section-tabs .cta-buttons a:last-of-type {
-  margin-top: 0;
-}
-
-/* ============================ */
 /* ABOUT */
 /* ============================ */
 
@@ -205,6 +193,12 @@ a:active {
   }
 }
 
+@media (max-width: 400px) {
+  .section-about-medicare a.hide-btn-1:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
 /* ============================ */
 /* COMPARE THE TOP PROVIDERS */
 /* ============================ */
@@ -279,6 +273,24 @@ a:focus,
 a:active {
   font-size: 14px;
   color: #fff;
+}
+
+/* ============================ */
+/* TABS */
+/* ============================ */
+
+.section-tabs .cta-buttons a:first-of-type {
+  margin-right: 10px;
+}
+
+.section-tabs .cta-buttons a:last-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 400px) {
+  .section-tabs .cta-buttons a:first-of-type {
+    margin-bottom: 10px;
+  }
 }
 
 /* ============================ */
