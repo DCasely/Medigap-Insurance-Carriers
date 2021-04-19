@@ -36,6 +36,11 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .intro-box * + .button-group {
+    padding-top: 25px;
+  }
+}
 /* ============================ */
 /* INTRO */
 /* ============================ */
